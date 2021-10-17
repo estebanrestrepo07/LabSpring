@@ -29,7 +29,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @ToString
 @ApiModel(description = "Toda la informacion del empleado. ")
 
-@Document(collection = "Empleados")
+@Document(collection = "empleado")
 public class Empleado implements Serializable{
     
     @ApiModelProperty(notes = " ID del empelado")
