@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - open jdk9
+services:
+  - mongodb
+before_install:
+  - chmod +x mvnw
+deploy:
+  provider: heroku
+  api_key: $Heroku
+  app: labspring-udea
