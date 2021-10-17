@@ -22,7 +22,7 @@ import org.springframework.http.MediaType;
 
 
 //@RequestMapping("/persona")
-@CrossOrigin("*")
+@CrossOrigin(value="*",methods = {RequestMethod.DELETE,RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT})
 @RestController
 public class EmpleadoController {
     
