@@ -22,7 +22,7 @@ import org.springframework.http.MediaType;
 
 
 //@RequestMapping("/persona")
-@CrossOrigin("*")
+@CrossOrigin("https://labsprind-udea-client.herokuapp.com/")
 @RestController
 public class EmpleadoController {
     
