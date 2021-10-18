@@ -22,7 +22,7 @@ import org.springframework.http.MediaType;
 
 
 //@RequestMapping("/persona")
-@CrossOrigin(value="*",methods = {RequestMethod.DELETE,RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT})
+@CrossOrigin("*")
 @RestController
 public class EmpleadoController {
     
@@ -70,7 +70,7 @@ public class EmpleadoController {
         //Optional<Empleado> lista = repository.findById(id);
         empleadoService.save(empleado);
         //return lista.get().getId();
-        return "update exitoso";
+        return "update exitoso";    
     }
     
 }
