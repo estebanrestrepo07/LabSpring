@@ -22,7 +22,7 @@ import org.springframework.http.MediaType;
 
 
 //@RequestMapping("/persona")
-@CrossOrigin("https://labsprind-udea-client.herokuapp.com/")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 public class EmpleadoController {
     
@@ -65,7 +65,7 @@ public class EmpleadoController {
         empleadoService.deleteById(id);
         return "Empleado despedido";
     }
-    @PutMapping(value = "/update")
+    @PostMapping(value = "/update")
     public String updateEmpleado(@RequestBody Empleado empleado){
         //Optional<Empleado> lista = repository.findById(id);
         empleadoService.save(empleado);
